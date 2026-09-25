@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b18">
+  <meta name="description" content="Página oficial de recaudación de fondos para Stella ST.">
+  <title>Stella ST | Recaudación</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badge">🚀 PROYECTO STELLA ST</div>
+      <h1>Llevemos <span>Stella ST</span><br>hasta las estrellas.</h1>
+      <p class="subtitle">
+        Estamos recaudando fondos para continuar desarrollando nuestro proyecto.
+        Cada aporte nos acerca un poco más a nuestro objetivo.
+      </p>
+    </section>
+
+    <section class="card donation-card">
+      <div class="rocket">🚀</div>
+      <h2>¿Querés colaborar?</h2>
+      <p>Podés realizar una transferencia utilizando el siguiente alias.</p>
+
+      <div class="alias-box">
+        <div>
+          <small>ALIAS PARA TRANSFERIR</small>
+          <strong id="alias">Stella.info</strong>
+        </div>
+        <button id="copyBtn" aria-label="Copiar alias">📋</button>
+      </div>
+
+      <button class="primary-btn" id="copyMainBtn">
+        COPIAR ALIAS
+      </button>
+
+      <p id="status" class="status" aria-live="polite"></p>
+
+      <div class="note">
+        Después de copiar el alias, abrí Mercado Pago, tu banco o billetera
+        virtual y pegalo para realizar la transferencia.
+      </div>
+    </section>
+
+    <section class="progress-section">
+      <div class="section-title">
+        <div>
+          <small>OBJETIVO</small>
+          <h2>Ayudanos a llegar</h2>
+        </div>
+        <strong id="percentage">42%</strong>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="amounts">
+        <span id="raised">$126.000</span>
+        <span id="goal">$300.000</span>
+      </div>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card">
+        <div class="icon">🛰️</div>
+        <h3>¿Qué es Stella ST?</h3>
+        <p>
+          Un proyecto educativo y tecnológico dedicado al desarrollo de una
+          cápsula experimental para realizar un vuelo de gran altitud.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <div class="icon">🔧</div>
+        <h3>¿En qué usamos los fondos?</h3>
+        <p>
+          Componentes electrónicos, sensores, comunicaciones, estructura,
+          materiales y otros gastos necesarios para llevar adelante el proyecto.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <div class="footer-logo">STELLA <span>ST</span></div>
+      <p>Proyecto educativo · Olavarría, Buenos Aires</p>
+      <p class="copyright">Gracias por ser parte del proyecto. ❤️</p>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast">Alias copiado correctamente ✓</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
